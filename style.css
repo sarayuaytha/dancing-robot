@@ -1,0 +1,282 @@
+body{
+    background-color: black;
+}
+h1{
+    color: chartreuse;
+}
+.area{
+    height:480px;
+    border: 2px solid red;
+}
+.head{
+    height: 150px;
+    width: 150px;
+    background-color:chartreuse;
+    border-radius:   100% 100%   0 0;
+    margin-top:50px;
+    margin: auto;
+    margin-bottom: 10px;
+    transition: transorm 1s linear;
+    
+}
+.area:hover .head{
+    margin-top: 50px;
+    transform: rotate(120deg);
+    transform-origin: bottom center;
+    animation: movehead 2s infinite;
+}
+
+@keyframes movehead{
+    0%{
+      transform: rotate(0deg);
+      transform-origin: bottom center;
+    }
+    
+    50%{
+      transform: rotate(55deg);
+      transform-origin: bottom center;
+      }
+    100%{
+      transform: rotate(0deg);
+      transform-origin: bottom center;
+    }
+}
+.eyes
+{
+     width: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    margin-top: 5%;
+    
+}
+.leye
+{
+    height: 25px;
+    width: 25px;
+    background-color: black;
+    border-radius: 50%;
+    transition: transform 1s ease;
+   }
+   .area:hover .leye{
+      transform: rotate(45deg);
+      transform-origin: bottom center;
+      animation: moveleye 2s infinite;
+  }
+  
+  @keyframes moveleye
+  {
+      0%{
+        transform: rotate(0deg);
+        transform-origin: bottom center;
+        margin-top: 50%;
+      }
+      
+      50%{
+        transform: rotate(0deg);
+        transform-origin: bottom center;
+        margin-top: 50%;
+        }
+      100%{
+        transform: rotate(0deg);
+        transform-origin: bottom center;
+        margin-top: 50%;
+      }
+   }
+.reye
+{
+    height: 25px;
+    width: 25px;
+    background-color: black;
+    border-radius: 50%;
+   }
+   .area:hover .reye{
+      transform: rotate(45deg);
+      transform-origin: bottom center;
+      animation: moveleye 2s infinite;
+  }
+    
+
+@keyframes movereye
+{
+    0%{
+      transform: rotate(0deg);
+      transform-origin: bottom center;
+      margin-top: 50%;
+    }
+    
+    50%{
+      transform: rotate(0deg);
+      transform-origin: bottom center;
+      margin-top: 50%;
+      }
+    100%{
+      transform: rotate(0deg);
+      transform-origin: bottom center;
+      margin-top: 50%;
+    }
+ }
+
+.body
+{
+    display: flex;
+    justify-content: space-evenly;
+    width: 250px;
+    margin: auto;
+
+    
+}
+.lhand{
+    height: 100px;
+    width: 25px;
+    background-color: chartreuse;
+    border-radius: 30px;
+    margin-top: 20px;
+    transition: transform 1s ease;
+
+}
+.area:hover .lhand{
+transform: rotate(140deg);
+transform-origin: top center;
+animation: movelhand 2s infinite;
+   }
+   @keyframes movelhand{
+     0%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+
+     }
+     50%{
+        transform: rotate(140deg);
+        transform-origin: top center;
+     }
+     100%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+     }
+
+   }
+.center{
+    height: 170px;
+    width: 150px;
+    background-color: chartreuse;
+    border-radius: 0 0 30% 30%;
+    transition: transform 2s ease;
+
+}
+.area:hover .center{
+    transform: rotate(-360deg);
+    transform-origin: center;
+    border-radius: 30% 30% 30% 30%;
+    animation: movecenter 2s infinite;
+
+}
+@keyframes movecenter{
+
+    0%{
+        transform: rotate(0deg);
+        transform-origin:  center;
+
+     }
+     50%{
+        transform: rotate(-360deg);
+        transform-origin:  center;
+     }
+     100%{
+        transform: rotate(0deg);
+        transform-origin:  center;
+     }
+}
+
+.rhand{
+    height: 100px;
+    width: 25px;
+    background-color: chartreuse;
+    border-radius: 30px;
+    margin-top: 20px;
+   transition: transform 1s ease;
+}
+.area:hover .rhand{
+    transform: rotate(140deg);
+    transform-origin: top center;
+    animation: moverhand 2s infinite;
+       }
+       @keyframes moverhand{
+         0%{
+            transform: rotate(0deg);
+            transform-origin: top center;
+    
+         }
+         50%{
+            transform: rotate(140deg);
+            transform-origin: top center;
+         }
+         100%{
+            transform: rotate(0deg);
+            transform-origin: top center;
+         }
+        }
+.legs{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100px;
+    margin: auto;
+    margin-top: -19px;
+}
+.lleg{
+    height: 100px;
+    width: 25px;
+    background-color:  chartreuse;
+    border-radius: 30px;
+    transition: transform 1s ease;
+   }
+.area:hover .lleg{
+    transform: rotate(45deg);
+    transform-origin: top center;
+    animation: movelleg 2s infinite;
+       }
+       @keyframes movelleg
+       {
+         0%{
+            transform: rotate(0deg);
+            transform-origin: top center;
+    
+         }
+         50%{
+            transform: rotate(45deg);
+            transform-origin: top center;
+         }
+         100%{
+            transform: rotate(0deg);
+            transform-origin: top center;
+         }
+        }
+.rleg{
+    height: 100px;
+    width: 25px;
+    background-color: chartreuse;
+    border-radius: 30px;
+    transition: transform 1s ease;
+   
+}
+.area:hover .rleg{
+    transform: rotate(-45deg);
+    transform-origin: top center;
+    animation: moverleg 2s infinite;
+       }
+       @keyframes moverleg
+       {
+         0%{
+            transform: rotate(0deg);
+            transform-origin: top center;
+    
+         }
+         50%{
+            transform: rotate(-45deg);
+            transform-origin: top center;
+         }
+         100%{
+            transform: rotate(0deg);
+            transform-origin: top center;
+         }
+        }
